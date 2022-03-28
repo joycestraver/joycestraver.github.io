@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="The impact of the oil industry on the Niger and Volta delta" content="information/comparison of the Niger and Volta delta">
+  <meta name="oilindustry, oil, Volta, Niger, deltas" content="HTML, CSS, JavaScript">
+<meta name="container" content="width=device-width, initial-scale=1.0">
+<meta name="#map" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="mainkopie.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+     integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+     crossorigin="">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <style> 
+         body {
+           margin: 0;
+           font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+         }
+         @media screen and (max-width: 750px) {
+           .topnav4 a:not(:first-child) {display: none;}
+           .topnav4 a.icon {
+             float: right;
+             display: block;
+           }
+         }
+         
+         @media screen and (max-width: 600px) {
+           .topnav4.responsive {position: relative;}
+           .topnav4.responsive .icon {
+             position: absolute;
+             right: 0;
+             top: 0;
+             color:rgb(115, 51, 15);
+           }
+           .topnav4.responsive a {
+             float: none;
+             display: block;
+             text-align: left;
+             color: rgb(115, 51, 15);
+           }
+         }
+         .topnav4 .icon {
+           display: none;
+         }
+         
+         
+         </style>
+     
+     </head>
+     <body> 
+         <div class="topnav4" id="myTopnav">
+          <a onclick="history.back()"class="logo">BACK </a>
+             <a href="contactpagina.html">CONTACT</a>
+             <a href="solutionspagina.html">SOLUTIONS</a>
+             <a href="index.html#btc"><b>VOLTA</b></a>
+             <a href="index.html#btc"><b>NIGER</b></a>
+             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                 <i class="fa fa-bars"></i>
+               </a>
+           </div>
+
+      <div class="containertradeniger2">
+        <img src="images/tradecropped.png" alt="tradeniger" style="width:100%">
+
+        <h1 class="titeldemograpy"><b>TRADE NIGER DELTA</b></h1>
+        </div>
+
+        <div id="map" style="width: 100%; height: 400px;"></div>
+        <div class="iconentrade"> 
+        <img src="images/iconentrade22.png" width= 100%;>
+        </div>
+        <div class="texttradeniger">
+        <p><b>Due to the rivers in the delta area and the sea, lots of trading is being done by the people living in Nigeria</b></p>
+        <p>Because of the amount of oil they are producing, lots of products can be made and exported, such as cosmetics, mineral oil, petroleum jelly, greases, bituminous based water/damp proof building materials such as floor tiles, rubber products, tarpaulins, etc. </p>
+        <p>But not only do they export oil and products made out of oil, they also are big exporters of; timber, fish, fruit and vegetables, palm oil, rubber and casava. </p>
+        </div>
+
+
+        <div class="footer2">
+            <footer> 
+                <a href="https://www.aereshogeschool.nl" target="_blank">
+               <button4><img src="illustraties/aeres logo.png" alt="aeres logo" width="50px" height="50px"> </button4></a>
+               <a href="https://www.linkedin.com/in/joyce-straver-22a4111b6/" target="_blank">
+                <button4><img src="illustraties/logowit kopie.png" alt="logo" width="50px" height="50px"></button4></a>
+                <p
+                class="text-center2">COPYRIGHT 2022 &copy; JOYCE STRAVER    
+                </p>
+                </footer>
+            </div>
+            
+            <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+            integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+            crossorigin=""></script>
+            <script>
+            var map = L.map('map').setView([4.5990157, 6.4192652], 12);
+            L.tileLayer('https://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+     maxZoom: 9
+ }).addTo(map);
+ var marker = L.marker([4.391073, 6.263985]).addTo(map);
+ var popup = marker.bindPopup('<b>NIGER DELTA</b><br');
+            </script>
+             <script>
+              function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav4") {
+                  x.className += " responsive";
+                } else {
+                  x.className = "topnav4";
+                }
+              }
+              </script>
+        
+</html>

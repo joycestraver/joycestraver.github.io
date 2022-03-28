@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="mainkopie.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+
+}
+
+body  {
+  background-image: url("images/pexels-zukiman-mohamad-87236.jpg");
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: rgb(193, 94, 40);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: rgb(193, 94, 40);
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+         body {
+           margin: 0;
+           font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+         }
+         @media screen and (max-width: 600px) {
+           .topnav2 a:not(:first-child) {display: none;}
+           .topnav2 a.icon {
+             float: right;
+             display: block;
+           }
+         }
+         
+         @media screen and (max-width: 750px) {
+           .topnav2.responsive {position: relative;}
+           .topnav.responsive .icon {
+             position: absolute;
+             right: 0;
+             top: 0;
+           }
+           .topnav2.responsive a {
+             float: none;
+             display: block;
+             text-align: left;
+           }
+         }
+         .topnav2 .icon {
+           display: none;
+         }
+         
+</style>
+</head>
+<body>
+
+    <div class="topnav2" id="myTopnav">
+        <a onclick="history.back()"class="logo">BACK </a>
+        <a href="contactpagina.html">CONTACT</a>
+        <a href="solutionspagina.html">SOLUTIONS</a>
+        <a href="index.html#btc"><b>VOLTA</b></a>
+        <a href="index.html#btc"><b>NIGER</b></a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+
+<div class="container">
+  <div style="text-align:center">
+    <h2 style="color: rgb(248, 240, 227);">CONTACT US</h2>
+    <p style="color: rgb(248, 240, 227);">leave us a message:</p>
+  </div>
+    <div class="column" style="align-items: center;">
+      <form action="/action_page.php">
+        <label for="fname" style="color: rgb(248, 240, 227);">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname" style="color: rgb(248, 240, 227);">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="country" style="color: rgb(248, 240, 227);">Country</label>
+        <select id="country" name="country" style="color: rgb(248, 240, 227);">
+          <option value="australia">Europe</option>
+          <option value="canada">Afrika</option>
+          <option value="usa">North-America</option>
+          <option value="australia">Central America</option>
+          <option value="canada">South-America</option>
+          <option value="usa">Asia</option>
+          <option value="canada">Oceania</option>
+          <option value="usa">Antartica</option>
+
+        </select>
+        <label for="subject" style="color: rgb(248, 240, 227);">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
+<script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
+
+</body>
+
+<div class="footer2">
+    <footer> 
+        <a href="https://www.aereshogeschool.nl" target="_blank">
+       <button4><img src="illustraties/aeres logo.png" alt="aeres logo" width="50px" height="50px"> </button4></a>
+       <a href="https://www.linkedin.com/in/joyce-straver-22a4111b6/" target="_blank">
+        <button4><img src="illustraties/logowit kopie.png" alt="logo" width="50px" height="50px"></button4></a>
+        <p
+        class="text-center2">COPYRIGHT 2022 &copy; JOYCE STRAVER    
+        </p>
+        </footer>
+    
+    </div>
+
+</html>
+</html>
